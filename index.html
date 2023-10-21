@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width" />
     <script type="text/javascript" lang="javascript"
       src="https://cdns.gigya.com/js/gigya.js?apikey=4_ZJhbyYLT59-O1t7-ggcnFA"></script>
+    
+    
+  </head>
+  <body> 
+    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-LiteRegistration'});"> Subscribe here! </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin', startScreen:'gigya-register-screen'});"> Register </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin'});"> Login </a>
     <span id="logout" hidden>
         &nbsp;&nbsp;|&nbsp;&nbsp;<a href = "#" onclick = "logout();">Logout</a>
     </span>
+
     <script type="text/javascript" lang="javascript">
       // calls the logout and then change the hidden value
       function logout(){
@@ -35,10 +43,5 @@
       });
       
     </script>
-  </head>
-  <body> 
-    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-LiteRegistration'});"> Subscribe here! </a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin', startScreen:'gigya-register-screen'});"> Register </a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin'});"> Login </a>
   </body>
 </html>
